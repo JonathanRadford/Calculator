@@ -7,6 +7,9 @@
 
 #Calculator{
   display: flex;
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
@@ -16,6 +19,9 @@
 
 #Calculator__Head{
   display: flex;
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: -webkit-flex; 
   align-items: flex-end;
   justify-content: flex-end;
   height: 200px;
