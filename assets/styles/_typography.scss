@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+}
+
+@media screen and (min-width: 768px){
+  *{
+    font-size: 2rem;
+  }  
+}
+
+@media screen and (min-width: 1024px){
+  *{
+    font-size: 2.5rem;
+  }  
+}
+
+
+//Mobile: 320px
+//Tablet: 768px
+//Desktop: 1024px
+//Large Desktop: 1440px
+//4k: 2560px +
