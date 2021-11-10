@@ -18,7 +18,11 @@
     font-size: 2.5rem;
   }  
 }
-
+@media screen and (min-width: 1024px){
+  *{
+    font-size: 2rem;
+  }  
+}
 
 //Mobile: 320px
 //Tablet: 768px

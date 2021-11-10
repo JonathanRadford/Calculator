@@ -1,22 +1,8 @@
 @import "_variables";
 
-btn-primary{
-  text-align: center;
-  font-size: 13px;
-  width: 120px;
-  height: 50px;
-  padding: 10px 15px;
-  margin: 10px;
-  border: .5px solid $secondary-colors;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn-primary{
+.btn-primary, .operator, .clear, .Equals{
   background-color: #EFEFEF;
 }
-
-
 
 #Calculator__Clear{
   grid-column: 1 / 4;
@@ -38,7 +24,7 @@ btn-primary{
   grid-column: 3 / 4;
   grid-row: 2 / 3;
 }
-#Calculator__Mulitply{
+#Calculator__Multiply{
   grid-column: 4 / 5;
   grid-row: 2 / 3;
 }
