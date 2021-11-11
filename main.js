@@ -6,20 +6,28 @@ const allButtons = Array.from(document.querySelectorAll(".button"));
 const equalButton = document.querySelector("#Calculator__Equals");
 const clearButton = document.querySelector("#Calculator__Clear");
 
-
+equalButton.addEventListener("click", () => getAnswer())
 
 numberedButtons.map(button  => { 
-    button.addEventListener("click", (buttons) => {
-        h1.innerText += buttons.target.innerText;  
-})
-});
+  button.addEventListener("click", (event) => {
+     getClickedNum(event)
+})})
 
-operatorButtons.map(button  =>{ 
-  button.addEventListener("click", (buttons) => {
-    h1.innerText += buttons.target.innerText;
-})
-});
+operatorButtons.map(button  => { 
+  button.addEventListener("click", (event) => {
+    getClickedOperator(event)
+})})
 
 clearButton.addEventListener('click', function() {
-    h1.innerHTML = '';
+  h1.innerHTML = ' ';
 });
+
+getClickedNum = button => {
+  const clickedNumber = button.target.innerHTML;
+   h1.innerHTML += clickedNumber;
+}
+
+getClickedOperator = button =>{
+   clickedOperator = button.target.innerHTML;
+h1.innerHTML += " " + clickedOperator + " ";
+};

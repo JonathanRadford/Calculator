@@ -164,7 +164,7 @@
   }
 
   #Calculator-Head {
-    height: 300px;
+    height: 250px;
     width: 500px;
   }
 
@@ -179,13 +179,13 @@
   }
 
   #Calculator-Head {
-    height: 500px;
-    width: 700px;
+    height: 250px;
+    width: 450px;
   }
 
   #Calculator__Input {
-    height: 700px;
-    width: 700px;
+    height: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -194,12 +194,12 @@
   }
 
   #Calculator-Head {
-    height: 350px;
-    width: 550px;
+    height: 250px;
+    width: 450px;
   }
 
   #Calculator__Input {
-    height: 550px;
-    width: 550px;
+    height: 450px;
+    width: 450px;
   }
 }
