@@ -33,3 +33,32 @@ h1.innerHTML += " " + clickedOperator + " ";
 };
 
 
+getAnswer = () => {
+  let result;
+  const numbersList = h1.innerHTML.split(" " + clickedOperator + " ");
+  const number1 = Number(numbersList[0])
+  const number2 = Number(numbersList[1])
+  
+  if(numbersList[0] != "" && numbersList[1] != ""){
+      switch(clickedOperator){
+        case "/":
+          result = number1 / number2;
+          break;
+          case "*":
+          result = number1 * number2;
+          break;
+          case "-":
+          result = number1 - number2;
+          break;
+          case "+":
+          result = number1 + number2;
+          break;
+      }
+  } else {
+  return;
+  }
+  h1.innerHTML = result;
+  };
+  
+  
+  
