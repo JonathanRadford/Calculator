@@ -1,5 +1,10 @@
 .btn-primary, .operator, .clear, .Equals {
-  background-color: #EFEFEF;
+  background-color: #FFFAFA;
+}
+
+.button {
+  border-radius: 10px;
+  margin: 5px;
 }
 
 #Calculator__Clear {
@@ -75,7 +80,6 @@
 #Calculator__Zero {
   grid-column: 1/3;
   grid-row: 5/6;
-  border-radius: 0 0 0 10px;
 }
 
 #Calculator__Dot {
@@ -86,7 +90,6 @@
 #Calculator__Equals {
   grid-column: 4/5;
   grid-row: 5/6;
-  border-radius: 0 0 10px 0;
 }
 
 * {
@@ -126,6 +129,7 @@
   flex-wrap: wrap;
   align-content: center;
   margin-top: 25px;
+  padding: 10px;
 }
 
 #Calculator-Head {
@@ -151,11 +155,12 @@
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   height: 300px;
   width: 300px;
-  background-color: #EFEFEF;
+  background-color: #bdb2b2;
   color: #434445;
   border: 3px solid #434445;
   box-sizing: border-box;
   border-radius: 0 0 10px 10px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -194,12 +199,12 @@
   }
 
   #Calculator-Head {
-    height: 250px;
-    width: 450px;
+    height: 300px;
+    width: 500px;
   }
 
   #Calculator__Input {
-    height: 450px;
-    width: 450px;
+    height: 500px;
+    width: 500px;
   }
 }
