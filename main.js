@@ -40,34 +40,30 @@ findOperator = (button) =>{
 //on click equals returns the getAnswer function
 equalButton.addEventListener("click", () => findAnswer())
 
+//function that responds to the Equal button being clicked after using an operator
 findAnswer = () => {
+  //created a variable answer to send information to
   let answer;
-  //takes the numbers and combines them with the clicked operator in a variables
-  const numbers = h1.innerHTML.split(" " + operator + " ");
-  //takes the numbers from the array
+  //created three seperate variables and stored which buttons and which operator have been used after .split turned them into an array
+  const numbers = h1.innerHTML.split(" " + operator + " ")
+  //stored the two number strings from the array
   const number1 = numbers[0]
   const number2 = numbers[1]
-  
-  if(numbers[0] != "" && numbers[1] != ""){
-      switch(operator){
-        case "/":
-          answer = number1 / number2;
-          break;
-          case "*":
-          answer = number1 * number2;
-          break;
-          case "-":
-          answer = number1 - number2;
-          break;
-          case "+":
-          answer = number1 + number2;
-          break;
-      }
+
+  //if the numbers at [0] and [1] are not equal to an empty string then the if else statement comes into play
+  if (numbers[0] != " " && numbers[1] != " "){
+    //if the operator button clicked is a string equal to "/" it divides, if not then it carries out the other statement if that one is true
+    if(operator === "/"){
+      answer = Number(number1) / Number(number2);
+    } else if (operator === "*"){
+      answer = Number(number1) * Number(number2);
+    } else if (operator === "-"){
+      answer = Number(number1) - Number(number2);
+   }  else if (operator === "+"){
+      answer = Number(number1) + Number(number2);
   } else {
-  return;
-  }
-  h1.innerHTML = answer;
-  };
-  
-  
-  
+     return
+   }
+   return h1.innerHTML = answer;
+} 
+}
