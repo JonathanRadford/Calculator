@@ -21,9 +21,9 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-top: 150px;
+  padding-top: 100px;
   height: 100px;
-  width: 450px;
+  width: 300px;
   background-color: $secondary-colors;
   color: $primary-colors;
   border: 4px solid $primary-colors;
@@ -39,8 +39,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  height: 450px;
-  width: 450px;
+  height: 300px;
+  width: 300px;
   background-color: $tertiary-colors;
   color: $primary-colors;
   border: 4px solid $primary-colors;
@@ -52,7 +52,7 @@
 
 @media screen and (min-width: 768px){ 
 #Calculator{
-  margin-top: 50px;  
+  margin-top: 5px;  
 }
 #Calculator-Head{
   height: 150px;
@@ -69,7 +69,7 @@
     margin-top: 75px;  
   }
   #Calculator-Head{
-    height: 100px;
+    height: 150px;
     width: 450px;
   }
   #Calculator__Input{
