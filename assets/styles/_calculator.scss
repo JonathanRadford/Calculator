@@ -55,7 +55,7 @@
   margin-top: 5px;  
 }
 #Calculator-Head{
-  height: 150px;
+  height: 200px;
   width: 500px;
 }
 #Calculator__Input{
@@ -68,28 +68,10 @@
   #Calculator{
     margin-top: 75px;  
   }
-  #Calculator-Head{
-    height: 150px;
-    width: 450px;
-  }
-  #Calculator__Input{
-    height: 450px;
-    width: 450px;
-  }
-}
+ }
 @media screen and (min-width: 1440px) {
   #Calculator {
     margin-top: 10px;
-  }
-
-  #Calculator-Head {
-    height: 100px;
-    width: 450px;
-  }
-
-  #Calculator__Input {
-    height: 450px;
-    width: 450px;
   }
 }
   
