@@ -67,25 +67,13 @@
 @media screen and (min-width: 1024px){ 
  
   #Calculator-Head{
-    height: 100px;
-    width: 300px;
+    height: 200px;
+    width: 400px;
   }
   #Calculator__Input{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
   }
  }
-@media screen and (min-width: 1440px) {
-  #Calculator {
-    margin-top: 10px;
-  }
-  #Calculator-Head{
-    height: 100px;
-    width: 300px;
-  }
-  #Calculator__Input{
-    height: 300px;
-    width: 300px;
-  }
-}
+
   
