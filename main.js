@@ -9,15 +9,10 @@ const percentage = document.querySelector("Calculator__Percentage");
 
 //on click the numbered Buttons find the button from the array
 numberedButtons.map(number  => { 
-  number.addEventListener("click", (button) => {
-     findNumber(button)
+  number.addEventListener("click", (e) => {
+    const number = e.target.innerHTML;
+    currentSum.innerHTML += number;
 })})
-
-//this stores the clicked number and concatenates it to another if pressed
-findNumber = (button) => {
-  const number = button.target.innerHTML;
-  currentSum.innerHTML += number;
-}
 
 //on click the Operator Buttons find the button from the array
 operatorButtons.map(operator  => { 
@@ -26,13 +21,13 @@ operatorButtons.map(operator  => {
 })})
 
 //this takes the two strings either side of the operator
-findOperator = (button) =>{
-  operator = button.target.innerHTML;
+findOperator = (e) =>{
+  operator = e.target.innerHTML;
   currentSum.innerHTML += " " + operator + " ";
 };
 
 //On click the clear button returns an empty string to currentSum
-clearButton.addEventListener('click', function() {
+clearButton.addEventListener('click', () => {
   currentSum.innerHTML = ' ';
 });
 
